@@ -6,6 +6,7 @@
 
 ## Running
 * `roslaunch point_cloud_projection camera_publisher.launch`
+* `roslaunch point_cloud_projection tf_link_publisher.launch`
 * `roslaunch point_cloud_projection tf_publisher.launch`
 * Run the `projector.rviz` Rviz config: `roscd point_cloud_projection && rviz -d rviz/*.rviz`
 * Run `image_view` with `rosrun image_view image_view image:=/proj_view/image`
