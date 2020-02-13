@@ -276,7 +276,7 @@ Visualization Manager:
       Axis: Z
       Channel Name: intensity
       Class: rviz/PointCloud2
-      Color: 239; 41; 41
+      Color: 255; 255; 255
       Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
@@ -289,9 +289,9 @@ Visualization Manager:
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
-      Size (Pixels): 3
+      Size (Pixels): 2
       Size (m): 0.009999999776482582
-      Style: Flat Squares
+      Style: Points
       Topic: /widget/clusters
       Unreliable: false
       Use Fixed Frame: true
