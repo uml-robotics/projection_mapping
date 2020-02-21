@@ -1,7 +1,7 @@
 # Point Cloud Projection
 
 ## Setup
-* Download the [`rviz_camera_stream`](https://github.com/lucasw/rviz_camera_stream) plugin to your `src` directory: `git clone https://github.com/lucasw/rviz_camera_stream`
+* Download the [`rviz_camera_stream`](https://github.com/uml-robotics/rviz_camera_stream) plugin to your `src` directory: `git clone git@github.com:uml-robotics/rviz_camera_stream.git`
 * Enable a "Toggle fullscreen mode" shortcut `Super + F11` in keyboard settings
 
 ## Running
