@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: point_cloud_projection
+Description: Description of point_cloud_projection
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

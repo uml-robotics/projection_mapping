@@ -1,5 +1,4 @@
 <launch>
 	<include file="$(find point_cloud_projection)/launch/camera_publisher.launch" />
-	<include file="$(find point_cloud_projection)/launch/tf_link_publisher.launch" />
 	<include file="$(find point_cloud_projection)/launch/tf_publisher.launch" />
 </launch>
