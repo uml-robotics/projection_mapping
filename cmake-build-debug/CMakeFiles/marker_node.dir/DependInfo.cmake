@@ -17,10 +17,14 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
+  "/opt/ros/melodic/include"
+  "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/cmake-build-debug/CMakeFiles/point_cloud_projection.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

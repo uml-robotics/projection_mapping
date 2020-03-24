@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/103/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/107/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/107/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -81,7 +81,6 @@ marker_node_EXTERNAL_OBJECTS =
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: CMakeFiles/marker_node.dir/build.make
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /opt/ros/melodic/lib/libroscpp.so
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /opt/ros/melodic/lib/librosconsole.so
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
@@ -98,6 +97,7 @@ marker_node_EXTERNAL_OBJECTS =
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: /home/jennaparrillo/catkin_ws/src/devel/lib/libpoint_cloud_projection.so
 /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node: CMakeFiles/marker_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/jennaparrillo/catkin_ws/src/devel/lib/point_cloud_projection/marker_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/marker_node.dir/link.txt --verbose=$(VERBOSE)

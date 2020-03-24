@@ -5,7 +5,7 @@
 		<Option title="gtest"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\src\;CMake Files\..\..\..\..\..\..\usr\src\googletest\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googlemock\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googletest\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googletest\cmake\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\test\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\em\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\cpp_common\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\cpp_common\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_runtime\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_runtime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rostime\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rostime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosconsole\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosconsole\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\std_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\std_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\visualization_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\visualization_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\catkin\;CMake Files\cmake-build-debug\catkin\catkin_generated\;CMake Files\cmake-build-debug\catkin\catkin_generated\version\;CMake Files\cmake-build-debug\catkin_generated\;CMake Files\cmake-build-debug\catkin_generated\installspace\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\src\;CMake Files\..\..\..\..\..\..\usr\src\googletest\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googlemock\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googletest\;CMake Files\..\..\..\..\..\..\usr\src\googletest\googletest\cmake\;CMake Files\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\test\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\em\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\cpp_common\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\cpp_common\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_runtime\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\message_runtime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rostime\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rostime\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosconsole\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosconsole\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\std_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\std_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\visualization_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\visualization_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genmsg\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gencpp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gencpp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geneus\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geneus\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genlisp\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genlisp\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gennodejs\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gennodejs\cmake\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genpy\;CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genpy\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\catkin\;CMake Files\cmake-build-debug\catkin\catkin_generated\;CMake Files\cmake-build-debug\catkin\catkin_generated\version\;CMake Files\cmake-build-debug\catkin_generated\;CMake Files\cmake-build-debug\catkin_generated\installspace\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/cmake-build-debug/gtest/googlemock/gtest"/>
@@ -406,6 +406,81 @@
 		</Unit>
 		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgsConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/nav_msgs/cmake/nav_msgs-msg-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/nav_msgs/cmake/nav_msgsConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/nav_msgs/cmake/nav_msgsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/actionlib_msgs/cmake/actionlib_msgs-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/actionlib_msgs/cmake/actionlib_msgs-msg-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/actionlib_msgs/cmake/actionlib_msgsConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/actionlib_msgs/cmake/actionlib_msgsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/genmsg/cmake/genmsg-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/genmsg/cmake/genmsgConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/genmsg/cmake/genmsgConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/gencpp/cmake/gencpp-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gencpp\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/gencpp/cmake/gencppConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gencpp\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/gencpp/cmake/gencppConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gencpp\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/geneus/cmake/geneus-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geneus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/geneus/cmake/geneusConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geneus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/geneus/cmake/geneusConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\geneus\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/genlisp/cmake/genlisp-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genlisp\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/genlisp/cmake/genlispConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genlisp\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/genlisp/cmake/genlispConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genlisp\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/gennodejs/cmake/gennodejs-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gennodejs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/gennodejs/cmake/gennodejsConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gennodejs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/gennodejs/cmake/gennodejsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\gennodejs\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/genpy/cmake/genpy-extras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genpy\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/genpy/cmake/genpyConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genpy\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/../../../../../../opt/ros/melodic/share/genpy/cmake/genpyConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\opt\ros\melodic\share\genpy\cmake\"/>
 		</Unit>
 		<Unit filename="/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/cmake-build-debug/catkin/catkin_generated/version/package.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\catkin\catkin_generated\version\"/>

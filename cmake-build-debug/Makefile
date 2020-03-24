@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/103/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/107/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/107/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,26 +59,14 @@ CMAKE_BINARY_DIR = /home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_p
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/107/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/clion/107/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -90,33 +78,10 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/snap/clion/103/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+	/snap/clion/107/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -124,16 +89,51 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/snap/clion/107/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/snap/clion/107/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/snap/clion/107/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/107/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/snap/clion/107/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/snap/clion/107/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,6 +166,71 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named marker_node
+
+# Build rule for target.
+marker_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 marker_node
+.PHONY : marker_node
+
+# fast build rule for target.
+marker_node/fast:
+	$(MAKE) -f CMakeFiles/marker_node.dir/build.make CMakeFiles/marker_node.dir/build
+.PHONY : marker_node/fast
+
+#=============================================================================
+# Target rules for targets named point_cloud_projection
+
+# Build rule for target.
+point_cloud_projection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_cloud_projection
+.PHONY : point_cloud_projection
+
+# fast build rule for target.
+point_cloud_projection/fast:
+	$(MAKE) -f CMakeFiles/point_cloud_projection.dir/build.make CMakeFiles/point_cloud_projection.dir/build
+.PHONY : point_cloud_projection/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_py
+
+# Build rule for target.
+actionlib_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_py
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_lisp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_eus
+
+# Build rule for target.
+actionlib_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
@@ -233,6 +298,19 @@ rosgraph_msgs_generate_messages_eus/fast:
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_cpp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -259,19 +337,6 @@ roscpp_generate_messages_py/fast:
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named marker_node
-
-# Build rule for target.
-marker_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 marker_node
-.PHONY : marker_node
-
-# fast build rule for target.
-marker_node/fast:
-	$(MAKE) -f CMakeFiles/marker_node.dir/build.make CMakeFiles/marker_node.dir/build
-.PHONY : marker_node/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
@@ -283,6 +348,19 @@ std_msgs_generate_messages_py: cmake_check_build_system
 std_msgs_generate_messages_py/fast:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_py
+
+# Build rule for target.
+nav_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_py
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/nav_msgs_generate_messages_py.dir/build.make CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
@@ -337,6 +415,19 @@ roscpp_generate_messages_lisp/fast:
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_lisp
+
+# Build rule for target.
+nav_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_lisp
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -348,6 +439,45 @@ tests: cmake_check_build_system
 tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
 
 #=============================================================================
 # Target rules for targets named download_extra_data
@@ -363,17 +493,17 @@ download_extra_data/fast:
 .PHONY : download_extra_data/fast
 
 #=============================================================================
-# Target rules for targets named run_tests
+# Target rules for targets named nav_msgs_generate_messages_nodejs
 
 # Build rule for target.
-run_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests
-.PHONY : run_tests
+nav_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_nodejs
+.PHONY : nav_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-run_tests/fast:
-	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-.PHONY : run_tests/fast
+nav_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+.PHONY : nav_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_nodejs
@@ -558,17 +688,30 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
+# Target rules for targets named nav_msgs_generate_messages_cpp
 
 # Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
+nav_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_cpp
+.PHONY : nav_msgs_generate_messages_cpp
 
 # fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
+nav_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+.PHONY : nav_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named nav_msgs_generate_messages_eus
+
+# Build rule for target.
+nav_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
+.PHONY : nav_msgs_generate_messages_eus
+
+# fast build rule for target.
+nav_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+.PHONY : nav_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -622,6 +765,33 @@ gtest/fast:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/NavArray.o: src/NavArray.cpp.o
+
+.PHONY : src/NavArray.o
+
+# target to build an object file
+src/NavArray.cpp.o:
+	$(MAKE) -f CMakeFiles/point_cloud_projection.dir/build.make CMakeFiles/point_cloud_projection.dir/src/NavArray.cpp.o
+.PHONY : src/NavArray.cpp.o
+
+src/NavArray.i: src/NavArray.cpp.i
+
+.PHONY : src/NavArray.i
+
+# target to preprocess a source file
+src/NavArray.cpp.i:
+	$(MAKE) -f CMakeFiles/point_cloud_projection.dir/build.make CMakeFiles/point_cloud_projection.dir/src/NavArray.cpp.i
+.PHONY : src/NavArray.cpp.i
+
+src/NavArray.s: src/NavArray.cpp.s
+
+.PHONY : src/NavArray.s
+
+# target to generate assembly for a file
+src/NavArray.cpp.s:
+	$(MAKE) -f CMakeFiles/point_cloud_projection.dir/build.make CMakeFiles/point_cloud_projection.dir/src/NavArray.cpp.s
+.PHONY : src/NavArray.cpp.s
+
 src/marker_node.o: src/marker_node.cpp.o
 
 .PHONY : src/marker_node.o
@@ -656,25 +826,37 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... test"
+	@echo "... marker_node"
+	@echo "... point_cloud_projection"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... install"
+	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... marker_node"
-	@echo "... list_install_components"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... install"
+	@echo "... nav_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... edit_cache"
+	@echo "... nav_msgs_generate_messages_lisp"
 	@echo "... tests"
-	@echo "... download_extra_data"
+	@echo "... rebuild_cache"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... run_tests"
+	@echo "... download_extra_data"
+	@echo "... nav_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... clean_test_results"
 	@echo "... install/local"
@@ -689,14 +871,16 @@ help:
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... test"
 	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rebuild_cache"
+	@echo "... nav_msgs_generate_messages_cpp"
+	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... src/NavArray.o"
+	@echo "... src/NavArray.i"
+	@echo "... src/NavArray.s"
 	@echo "... src/marker_node.o"
 	@echo "... src/marker_node.i"
 	@echo "... src/marker_node.s"

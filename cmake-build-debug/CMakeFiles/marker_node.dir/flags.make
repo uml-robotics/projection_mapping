@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"point_cloud_projection\"
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/jennaparrillo/catkin_ws/src/adi_challenge/point_cloud_projection/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 
