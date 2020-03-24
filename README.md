@@ -9,6 +9,6 @@
 * `roslaunch point_cloud_projection tf_link_publisher.launch`
 * `roslaunch point_cloud_projection tf_publisher.launch`
 * `rosrun point_cloud_projection marker_node`
-* Run the `projector.rviz` Rviz config: `roscd point_cloud_projection && rviz -d rviz/fetch_projector.rviz`
+* Run the `fetch_projector.rviz` Rviz config: `roscd point_cloud_projection && rviz -d rviz/fetch_projector.rviz`
 * Run `image_view` with `rosrun image_view image_view image:=/proj_view/image`
 * Make the image fullscreen on the projector screen by pressing `Super + F11`
