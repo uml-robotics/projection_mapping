@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libpoint_cloud_projection.so -o /home/jennaparrillo/catkin_ws/src/devel/lib/libpoint_cloud_projection.so CMakeFiles/point_cloud_projection.dir/src/NavArray.cpp.o 
