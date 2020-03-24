@@ -10,6 +10,7 @@ project(point_cloud_projection)
 find_package(catkin REQUIRED COMPONENTS
         roscpp
         visualization_msgs
+        nav_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -102,9 +103,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES camera_info
-#  CATKIN_DEPENDS other_catkin_pkg
+ INCLUDE_DIRS include
+ LIBRARIES point_cloud_projection
+ CATKIN_DEPENDS roscpp visualization_msgs nav_msgs
 #  DEPENDS system_lib
 )
 
@@ -115,15 +116,12 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
- #include
- #${catkin_INCLUDE_DIRS}
+ include
+ ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/camera_info.cpp
-# )
-
+add_library(point_cloud_projection include/point_cloud_projection/NavArray.h src/NavArray.cpp)
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
@@ -146,7 +144,7 @@ include_directories(
 
 ## Specify libraries to link a library or executable target against
  target_link_libraries(marker_node
-  ${catkin_LIBRARIES}
+  ${catkin_LIBRARIES} point_cloud_projection
  )
 
 #############
@@ -176,14 +174,17 @@ include_directories(
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
 # )
-
+install(TARGETS ${PROJECT_NAME} DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})
 ## Mark cpp header files for installation
 # install(DIRECTORY include/${PROJECT_NAME}/
 #   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 #   FILES_MATCHING PATTERN "*.h"
 #   PATTERN ".svn" EXCLUDE
 # )
-
+install(DIRECTORY include/${PROJECT_NAME}/
+        DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+        FILES_MATCHING PATTERN "*.h"
+        )
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 # install(FILES
 #   # myfile1
