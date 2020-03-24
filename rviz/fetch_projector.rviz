@@ -98,6 +98,7 @@ Visualization Manager:
       Queue Size: 2
       Value: true
       Visibility:
+        " Nav path MarkerArray": true
         Grid: true
         RobotModel: false
         TF: false
@@ -231,6 +232,14 @@ Visualization Manager:
       Shaft Length: 0.10000000149011612
       Topic: /move_base/NavfnROS/plan
       Unreliable: false
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /visualization_marker_array
+      Name: " Nav path MarkerArray"
+      Namespaces:
+        {}
+      Queue Size: 100
       Value: true
   Enabled: true
   Global Options:
