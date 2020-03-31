@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: point_cloud_projection
-Description: Description of point_cloud_projection
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lpoint_cloud_projection
-Requires: roscpp visualization_msgs nav_msgs rviz_visual_tools
