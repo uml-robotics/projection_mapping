@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
         roscpp
         visualization_msgs
         nav_msgs
+        rviz_visual_tools
 )
 
 ## System dependencies are found with CMake's conventions
@@ -105,7 +106,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
  INCLUDE_DIRS include
  LIBRARIES point_cloud_projection
- CATKIN_DEPENDS roscpp visualization_msgs nav_msgs
+ CATKIN_DEPENDS roscpp visualization_msgs nav_msgs rviz_visual_tools
 #  DEPENDS system_lib
 )
 
