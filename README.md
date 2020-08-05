@@ -10,3 +10,10 @@
 * Run the `fetch_projector.rviz` Rviz config: `roscd point_cloud_projection && rviz -d rviz/fetch_projector.rviz`
 * Run `image_view` with `rosrun image_view image_view image:=/proj_view/image`
 * Make the image fullscreen on the projector screen by pressing `Super + F11`
+
+## Launch Files
+`camera_publisher.launch` uses `projector_camera_info.yaml` to publish `/proj_view/camera_info`, which is a topic of type sensor_msgs::CameraInfo
+
+`tf_publisher.launch` creates 2 static transform publishers `proj_link` and `proj_view`. `proj_link` is the center of the bottom of the projector, and `proj_view` is the lense of the projector
+
+`point_cloud_projection.launch` launches both `camera_publisher.launch` and `tf_publisher.launch`
