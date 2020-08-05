@@ -5,11 +5,19 @@
 * Enable a "Toggle fullscreen mode" shortcut `Super + F11` in keyboard settings
 
 ## Running
+### Projecting Point Clouds
+* `roslaunch point_cloud_projection point_cloud_projection.launch`
+* Run the `fetch_projector.rviz` Rviz config: `roscd point_cloud_projection && rviz -d rviz/fetch_projector.rviz`
+* Run `image_view` with `rosrun image_view image_view image:=/proj_view/image`
+* Make the image fullscreen on the projector screen by pressing `Super + F11`
+* The projector should be pointed in the direction of the point cloud
+### Projecting Navigation Path
 * `roslaunch point_cloud_projection point_cloud_projection.launch`
 * `rosrun point_cloud_projection marker_node`
 * Run the `fetch_projector.rviz` Rviz config: `roscd point_cloud_projection && rviz -d rviz/fetch_projector.rviz`
 * Run `image_view` with `rosrun image_view image_view image:=/proj_view/image`
 * Make the image fullscreen on the projector screen by pressing `Super + F11`
+* The projector should be pointed at the floor in front of the robot
 
 ## Launch Files
 `camera_publisher.launch` uses `projector_camera_info.yaml` to publish `/proj_view/camera_info`, which is a topic of type sensor_msgs::CameraInfo
