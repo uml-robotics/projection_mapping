@@ -19,6 +19,7 @@ Notes:
 * The fixed frame in the Rviz confing is currently set to `projector_turret_base_link`
 * The projection image is the view from the `proj_view` TF frame in Rviz
 * `proj_link`'s parent is currently `base_link`
+* `projector_camera_info.yaml` is set up for a ViewSonic PA503W projector 
 ### Projecting Point Clouds
 * Launch point cloud projection: `roslaunch point_cloud_projection point_cloud_projection.launch`
 * Run the `fetch_projector.rviz` Rviz config: `roscd point_cloud_projection && rviz -d rviz/fetch_projector.rviz`, or your own config
