@@ -23,6 +23,8 @@ Notes:
 * Run `image_view` with `rosrun image_view image_view image:=/proj_view/image`
 * Make the image fullscreen on the projector screen by pressing `Super + F11`
 * The projector should be pointed in the direction of the point cloud
+![Image of point cloud clusters in rviz](images/cluster_rviz.png "Image of point cloud clusters in rviz")
+![Image of point cloud clusters](images/projection_cluster.png "Image of point cloud clusters")
 ### Projecting Navigation Path
 * Launch point cloud projection: `roslaunch point_cloud_projection point_cloud_projection.launch`
 * Run the marker publishing node: `rosrun point_cloud_projection marker_node`
@@ -31,7 +33,7 @@ Notes:
 * Make the image fullscreen on the projector screen by pressing `Super + F11`
 * The projector should be pointed at the floor in front of the robot
 
-![Image of markers in rviz](images/new_arrows.png "Images of markers in rviz")
+![Image of markers in rviz](images/new_arrows.png "Image of markers in rviz")
 
 ## Launch Files
 `camera_publisher.launch` uses `projector_camera_info.yaml` to publish `/proj_view/camera_info`, which is a topic of type sensor_msgs::CameraInfo
