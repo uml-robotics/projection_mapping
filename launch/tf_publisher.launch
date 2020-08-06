@@ -1,5 +1,5 @@
 <launch>
 
 	<node pkg="tf" type="static_transform_publisher" name="proj_link" args="0 0 0.0 1.54 0 0 base_link proj_link 100" />
-	<node pkg="tf" type="static_transform_publisher" name="proj_view" args="0.094 0.09 0.06 -1.57 0 -2.5 proj_link proj_view 100" />
+	<node pkg="tf" type="static_transform_publisher" name="proj_view" args="0.094 0.09 0.06 -1.57 0 -1.57 proj_link proj_view 100" />
 </launch>
