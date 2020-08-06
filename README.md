@@ -23,8 +23,10 @@ Notes:
 * Run `image_view` with `rosrun image_view image_view image:=/proj_view/image`
 * Make the image fullscreen on the projector screen by pressing `Super + F11`
 * The projector should be pointed in the direction of the point cloud
+
 ![Image of point cloud clusters in rviz](images/cluster_rviz.png "Image of point cloud clusters in rviz")
 ![Image of point cloud clusters](images/projection_cluster.png "Image of point cloud clusters")
+
 ### Projecting Navigation Path
 * Launch point cloud projection: `roslaunch point_cloud_projection point_cloud_projection.launch`
 * Run the marker publishing node: `rosrun point_cloud_projection marker_node`
