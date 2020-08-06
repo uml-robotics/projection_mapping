@@ -31,6 +31,8 @@ Notes:
 * Make the image fullscreen on the projector screen by pressing `Super + F11`
 * The projector should be pointed at the floor in front of the robot
 
+![Image of markers in rviz](point_cloud_projection/images/new_arrows.png "Images of markers in rviz")
+
 ## Launch Files
 `camera_publisher.launch` uses `projector_camera_info.yaml` to publish `/proj_view/camera_info`, which is a topic of type sensor_msgs::CameraInfo
 
