@@ -3,6 +3,9 @@
 ## Setup
 * Download the [`rviz_camera_stream`](https://github.com/uml-robotics/rviz_camera_stream) plugin to your `src` directory: `git clone git@github.com:uml-robotics/rviz_camera_stream.git`
 * Enable a "Toggle fullscreen mode" shortcut `Super + F11` in keyboard settings
+
+![Image of keyboard shortcut](images/keyboard_shortcut.png "Image of keyboard shortcut")
+
 ### If You Want To Set Up Your Own Rviz Configuration From An Empty Configuration
 * Change the Fixed Frame to the one being used
 * It is reccommended to add a TF display to see the location of the projector
