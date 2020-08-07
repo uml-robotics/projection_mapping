@@ -2,6 +2,10 @@
 
 This package is used to publish a virtual camera in Rviz for use on a projector. It also includes a node to turn a navigation path into path of arrows. Feel free to open an issue if you have any questions or encounter any problems.
 
+![Simulated example image](images/large_screw_clusters_close.png "Simulated example image")
+
+pcd files for this example are included [here](pcds) 
+
 ## Setup
 * Download the [`rviz_camera_stream`](https://github.com/uml-robotics/rviz_camera_stream) plugin to your `src` directory: `git clone git@github.com:uml-robotics/rviz_camera_stream.git`
 * Enable a "Toggle fullscreen mode" shortcut `Super + F11` in keyboard settings
