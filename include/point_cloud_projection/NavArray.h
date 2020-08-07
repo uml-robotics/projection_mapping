@@ -17,7 +17,7 @@ private:
     ros::NodeHandle n;
     rviz_visual_tools::RvizVisualToolsPtr visual_tools;
     //Frequency of arrows. Bigger number = less arrows.
-    const int FREQUENCY_DEFAULT = 7;
+    const int FREQUENCY_DEFAULT = 9;
     visualization_msgs::MarkerArray marker_array;
     void callback(const nav_msgs::Path msg);
 };

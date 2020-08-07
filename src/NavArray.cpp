@@ -37,13 +37,13 @@ void NavArray::callback(const nav_msgs::Path msg) {
 
             int prev_pose = (i == size -1 && final_pose != size - 1) ? final_pose : i - frequency;
             geometry_msgs::Point p1;
-            p1.x = msg.poses.at(prev_pose).pose.position.x;
-            p1.y = msg.poses.at(prev_pose).pose.position.y;
-            p1.z = msg.poses.at(prev_pose).pose.position.z;
+            p1.x = msg.poses.at(prev_pose + 1).pose.position.x;
+            p1.y = msg.poses.at(prev_pose + 1).pose.position.y;
+            p1.z = msg.poses.at(prev_pose + 1).pose.position.z;
             geometry_msgs::Point p2;
-            p2.x = msg.poses.at(i).pose.position.x;
-            p2.y = msg.poses.at(i).pose.position.y;
-            p2.z = msg.poses.at(i).pose.position.z;
+            p2.x = msg.poses.at(i + 1).pose.position.x;
+            p2.y = msg.poses.at(i + 1).pose.position.y;
+            p2.z = msg.poses.at(i + 1).pose.position.z;
             marker.points.push_back(p1);
             marker.points.push_back(p2);
 
@@ -52,9 +52,9 @@ void NavArray::callback(const nav_msgs::Path msg) {
             marker.pose.orientation.z = 0.0;
             marker.pose.orientation.w = 1.0;
 
-            marker.scale.x = 0.02;
-            marker.scale.y = 0.04;
-            marker.scale.z = 0.05;
+            marker.scale.x = 0.04;
+            marker.scale.y = 0.08;
+            marker.scale.z = 0.08;
             marker.color.a = 1.0;
             marker.color.r = 1.0;
             marker.color.g = 1.0;
