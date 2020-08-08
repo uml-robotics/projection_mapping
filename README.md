@@ -1,26 +1,29 @@
-# Point Cloud Projection
+# Projection Mapping Sample: Point Cloud Projection
 
-This package is used to publish a virtual camera in Rviz for use on a projector. It also includes a node to turn a navigation path into path of arrows. Feel free to open an issue if you have any questions or encounter any problems.
+This package is used to publish a virtual world in Rviz for use on a projector. It also includes a node to turn a navigation path into path of arrows. Feel free to open an issue if you have any questions or encounter any problems. This packages was tested with ROS Melodic on Ubuntu 18.04.
 
 ![Simulated example image](images/large_screw_clusters_close.png "Simulated example image")
 
-pcd files for this example are included [here](pcds) 
+The pcd files for this example are included in the [pcds](pcds) directory.
 
 ## Setup
-* Download the [`rviz_camera_stream`](https://github.com/uml-robotics/rviz_camera_stream) plugin to your `src` directory: `git clone git@github.com:uml-robotics/rviz_camera_stream.git`
-* Enable a "Toggle fullscreen mode" shortcut `Super + F11` in keyboard settings
+
+* Download the [`rviz_camera_stream`](https://github.com/uml-robotics/rviz_camera_stream) plugin to your `src` directory: `git clone https://github.com/uml-robotics/rviz_camera_stream.git`
+* On Ubuntu, enable a "Toggle fullscreen mode" shortcut `Super + F11` in keyboard settings:
 
 ![Image of keyboard shortcut](images/keyboard_shortcut.png "Image of keyboard shortcut")
 
-### If You Want To Set Up Your Own Rviz Configuration From An Empty Configuration
-* Change the Fixed Frame to the one being used
-* It is reccommended to add a TF display to see the location of the projector
-* If you plan to project point clouds, add displays for them
-* If you plan to project the navigation MarkerArray, add a MarkerArray display and set the topic to `/visualization_marker_array`
-* Add an Image display and set the topic to `/proj_view/image`
-* Add any other displays you need
+### Fresh Rviz setup
+* Change the Fixed Frame to the projector frame
+  * See [`launch/tf_publisher.launch`] for an example on how to publish projector frames
+  * It is reccommended to add a TF display to see the location of the projector
+* Add displays to visualize anything
+  * If you plan to project point clouds, add displays for them
+  * If you plan to project the navigation MarkerArray, add a MarkerArray display and set the topic to `/visualization_marker_array`
+* Add an Image display and set the topic to `/proj_view/image` or your custom image topic
 * Add a CameraPub display
   * Set the image topic to `/proj_view/image` and the camera info topic to `/proj_view/camera_info`
+    * See [`launch/camera_publisher.launch`] for an example on how to publish a CameraInfo message
   * Under "Visibility", choose what you want visible from `proj_view`
 
 ## Running
@@ -31,7 +34,8 @@ Notes:
 * `projector_camera_info.yaml` is set up for a ViewSonic PA503W projector 
 ### Projecting Point Clouds
 * Launch point cloud projection: `roslaunch point_cloud_projection point_cloud_projection.launch`
-* Run the `fetch_projector.rviz` Rviz config: `roscd point_cloud_projection && rviz -d rviz/fetch_projector.rviz`, or your own config
+  * This will launch both `launch/camera_publisher.launch` and `launch/tf_publisher.launch`
+* Run the `fetch_projector.rviz` Rviz config: `roscd point_cloud_projection && rviz -d rviz/fetch_projector.rviz`, or your own rviz config
 * Run `image_view` with `rosrun image_view image_view image:=/proj_view/image`
 * Make the image fullscreen on the projector screen by pressing `Super + F11`
 * The projector should be pointed in the direction of the point cloud either manually or with a pan/tilt unit as described in the paper
