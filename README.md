@@ -17,7 +17,6 @@ Video:
  - [Launch Files](#launch-files)
 
 ## Setup
-
 * Download the [`rviz_camera_stream`](https://github.com/uml-robotics/rviz_camera_stream) plugin to your `src` directory: `git clone https://github.com/uml-robotics/rviz_camera_stream.git`
 * On Ubuntu, enable a "Toggle fullscreen mode" shortcut `Super + F11` in keyboard settings:
 
@@ -41,7 +40,7 @@ Notes:
 * The fixed frame in the Rviz confing is currently set to `projector_turret_base_link`
 * The projection image is the view from the `proj_view` TF frame in Rviz
 * `proj_link`'s parent is currently `base_link`
-* `projector_camera_info.yaml` is set up for a ViewSonic PA503W projector 
+* `projector_camera_info.yaml` is set up for a ViewSonic PA503W projector. Details on how to manually calculate the values of *K* and *P* can be found in [`docs/projector_calibration.pdf`].
 ### Projecting Point Clouds
 * Launch point cloud projection: `roslaunch point_cloud_projection point_cloud_projection.launch`
   * This will launch both `launch/camera_publisher.launch` and `launch/tf_publisher.launch`
