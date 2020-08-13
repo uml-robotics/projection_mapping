@@ -1,6 +1,6 @@
 # Projection Mapping Sample: Point Cloud Projection
 
-This package is used to publish a virtual world in Rviz for use on a projector. It also includes a node to turn a navigation path into path of arrows. Feel free to open an issue if you have any questions or encounter any problems. This packages was tested with ROS Melodic on Ubuntu 18.04.
+This package is used to publish a virtual world in Rviz for use on a projector. It also includes a node to turn a navigation path into path of arrows. Feel free to open an issue if you have any questions or encounter any problems. This package was tested with ROS Melodic on Ubuntu 18.04.
 
 It is accompanied with the following paper submitted to AI-HRI 2020:
 
