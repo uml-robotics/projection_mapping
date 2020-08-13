@@ -2,6 +2,11 @@
 
 This package is used to publish a virtual world in Rviz for use on a projector. It also includes a node to turn a navigation path into path of arrows. Feel free to open an issue if you have any questions or encounter any problems. This packages was tested with ROS Melodic on Ubuntu 18.04.
 
+It is accompanied with the following paper submitted to AI-HRI 2020:
+
+Projection Mapping Implementation: Enabling Direct Externalization of Perception Results and Action Intent to Improve Robot Explainability. Submitted to the AI-HRI Symposium at AAAI-FSS 2020.
+
+
 ![Simulated example image](images/gazebo_gear.png "Simulated example image")
 ![Simulated example image](images/desired_gear.png "Simulated example image")
 
