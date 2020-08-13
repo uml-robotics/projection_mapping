@@ -6,11 +6,15 @@ It is accompanied with the following paper submitted to AI-HRI 2020:
 
 Projection Mapping Implementation: Enabling Direct Externalization of Perception Results and Action Intent to Improve Robot Explainability. Submitted to the AI-HRI Symposium at AAAI-FSS 2020.
 
+Video:
 
-![Simulated example image](images/gazebo_gear.png "Simulated example image")
-![Simulated example image](images/desired_gear.png "Simulated example image")
+[![Click to watch the video](images/video_poster.png)](https://www.youtube.com/watch?v=S0z9e2gUrEA)
 
-The pcd files for this example are included in the [pcds](pcds) directory.
+## Table of Content
+
+ - [Setup](#setup)
+ - [Running](#running)
+ - [Launch Files](#launch-files)
 
 ## Setup
 
