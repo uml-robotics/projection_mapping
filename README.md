@@ -10,7 +10,7 @@ Video:
 
 [![Click to watch the video](images/video_poster.png)](https://www.youtube.com/watch?v=S0z9e2gUrEA)
 
-## Table of Content
+## Table of Contents
 
  - [Setup](#setup)
  - [Running](#running)
